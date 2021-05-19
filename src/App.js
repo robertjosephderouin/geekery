@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import logo from './logo.svg';
+import Home from './Home';
 import Nav from './Nav';
 import About from './About';
 import Events from './Events';
@@ -13,9 +14,12 @@ function App() {
     <Router>
       <div className="app">
         <Nav />
-        <Route path='/events' component={Events} />
-        <Route path='/about' component={About} />
-        <Route path='/team' component={Team} />
+        <Switch>
+          <Route path='/' exact component ={Home} />
+          <Route path='/events' component={Events} />
+          <Route path='/about' component={About} />
+          <Route path='/team' component={Team} />
+        </Switch>
       </div>
     </Router>
   );
