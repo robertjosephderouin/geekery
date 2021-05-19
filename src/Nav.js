@@ -1,8 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 import companyLogo from './logo512.png';
-import logo from './logo.svg';
 import './App.css';
 
 
@@ -19,9 +17,7 @@ function Nav() {
         <address>
           1800 S Milton Rd #110-111, Flagstaff, AZ 86001
         </address>
-        <address>
-        (928) 774-0296
-        </address>
+        <a href="tel:1-928-744-0296"> 928-774-0296</a>
       </section>
       <ul>
         <Link to='/Events'>

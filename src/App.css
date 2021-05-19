@@ -7,6 +7,22 @@ nav{
   color: white;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a[href^="tel:"]:before {
+    content: "\1F4F1";
+}
+
+h2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+}
+
 .company-logo{
   width: 2.5%;
   margin-top: 10px;
@@ -20,4 +36,53 @@ nav{
   align-items: center;
   list-style: none;
   color: white;
+}
+
+
+.about-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.members-container {
+  margin-left: 5vw;
+  margin-top: 2vw;
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(4, .2fr);
+  grid-auto-rows: 1fr;
+  align-items: start;
+}
+
+.link {
+  height: 100%;
+  text-decoration: none;
+  color: #000000;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: .4rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
+  cursor: pointer;
+  width: 20vw;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);
+}
+
+.team-photo {
+  border-radius: 10px 10px 0px 0px;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.text {
+  padding-left: 10px;
 }
